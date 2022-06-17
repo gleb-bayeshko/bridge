@@ -26,13 +26,12 @@ export const LoginForm = styled.form`
 `
 
 export const LoginUserNameInput = styled(BrandInput)`
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  padding: 12px 10px;
 `
 
 export const LoginPasswordInput = styled(BrandInput)`
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  padding: 12px 10px;
+  margin-top: 20px;
 `
 
 export const LoginBrandButton = styled(BrandButton)`

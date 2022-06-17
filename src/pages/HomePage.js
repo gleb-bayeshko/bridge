@@ -1,8 +1,11 @@
+import UserLayout from 'layouts/UserLayout'
+import Home from 'containers/Home'
+
 const HomePage = () => {
   return (
-    <div>
-      sss
-    </div>
+    <UserLayout>
+      <Home />
+    </UserLayout>
   )
 }
 
