@@ -1,20 +1,15 @@
-function App() {
+import { Routes, Route } from 'react-router-dom'
+import Home from 'pages/HomePage'
+import Login from 'pages/LoginPage'
+import paths from 'paths'
+import './global.css'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path={paths.login} element={<Login />} />
+      <Route path={paths.home} element={<Home />} />
+    </Routes>
   )
 }
 
